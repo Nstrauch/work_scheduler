@@ -1,0 +1,65 @@
+Connecting to database specified by database.yml
+  [1m[36m (73.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (91.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePeople (20130209214335)
+  [1m[35m (68.5ms)[0m  CREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `email` varchar(255), `phone` varchar(255), `address` varchar(255), `locationAsst` varchar(255), `position` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (19.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130209214335')[0m
+  [1m[35m (6.5ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePeople (20130209214335)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePeople (20130209214335)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePeople (20130209214335)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePeople (20130209214335)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (50.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (12.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePeople (20130209214335)
+  [1m[35m (8.8ms)[0m  CREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `userNumber` varchar(255), `email` varchar(255), `phone` varchar(255), `address` varchar(255), `locationAsst` varchar(255), `position` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (4.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130209214335')[0m
+  [1m[35m (9.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (165.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (82.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (8.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePeople (20130209214335)
+  [1m[35m (8.2ms)[0m  CREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `userNumber` varchar(255), `email` varchar(255), `phone` varchar(255), `address` varchar(255), `locationAsst` varchar(255), `position` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130209214335')[0m
+Migrating to CreateAvailabilities (20130210050837)
+  [1m[35m (9.2ms)[0m  CREATE TABLE `availabilities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `DayMorning` tinyint(1), `DayAfternoon` tinyint(1), `EndMorning` tinyint(1), `EndAfternoon` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (4.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130210050837')[0m
+  [1m[35m (0.5ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (88.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (20.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePeople (20130209214335)
+  [1m[35m (19.5ms)[0m  CREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `userNumber` varchar(255), `email` varchar(255), `phone` varchar(255), `address` varchar(255), `location` varchar(255), `position` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (7.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130209214335')[0m
+Migrating to CreateAvailabilities (20130210050837)
+  [1m[35m (8.9ms)[0m  CREATE TABLE `availabilities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `DayMorning` tinyint(1), `DayAfternoon` tinyint(1), `EndMorning` tinyint(1), `EndAfternoon` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (4.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130210050837')[0m
+  [1m[35m (0.9ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml

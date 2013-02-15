@@ -1,0 +1,5 @@
+class Availability < ActiveRecord::Base
+  attr_accessible :wDayMorning, :wDayAfternoon, :wEndMorning, :wEndAfternoon
+
+  belongs_to :person
+end

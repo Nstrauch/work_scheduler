@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mon: false
+  tues: false
+  wed: false
+  thurs: false
+  fri: false
+  sat: false
+  sun: false
+
+two:
+  mon: false
+  tues: false
+  wed: false
+  thurs: false
+  fri: false
+  sat: false
+  sun: false
