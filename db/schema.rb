@@ -30,8 +30,12 @@ ActiveRecord::Schema.define(:version => 20130210050837) do
     t.string   "address"
     t.string   "location"
     t.string   "position"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.boolean  "dayMorning"
+    t.boolean  "dayAfternoon"
+    t.boolean  "endMorning"
+    t.boolean  "endAfternoon"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
 end

@@ -1,7 +1,8 @@
 class Person < ActiveRecord::Base
   
-  attr_accessible :address, :email, :first, :last, :userNumber, :locationAsst, 
-		  :phone, :position
+  attr_accessible :address, :email, :first, :last, :userNumber, :location, 
+		  :phone, :position, 
+		  :DayMorning, :DayAfternoon, :EndMorning, :EndAfternoon
 
   has_one :schedule
   has_one :availability

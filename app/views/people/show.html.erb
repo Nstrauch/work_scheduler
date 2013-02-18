@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First:</b>
+  <%= @person.first %>
+</p>
+
+<p>
+  <b>Last:</b>
+  <%= @person.last %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @person.address %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @person.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @person.phone %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @person.location %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @person.position %>
+</p>
+
+<p>
+  <b>User ID:</b>
+  <%= @person.userNumber %>
+</p>
+
+<p>
+  <b>Availability:</b>
+</p>
+
+<p>
+  <b>Weekday Mornings:</b>
+  <%= @person.dayMorning %>
+</p>
+
+<p>
+  <b>Weekday Afternoons:</b>
+  <%= @person.dayAfternoon %>
+</p>
+
+<p>
+  <b>Weekend Mornings:</b>
+  <%= @person.endMorning %>
+</p>
+
+<p>
+  <b>Weekday Afternoons:</b>
+  <%= @person.endAfternoon %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

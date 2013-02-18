@@ -1,0 +1,64 @@
+<h1>Listing people</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>First</th>
+    <th>Last</th>
+    <th>Address</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Location</th>
+    <th>Position</th>
+    <th>User ID</th>
+    <th>Availability</th>
+    <th>Weekday Mornings</th>
+    <th>Weekday Afternoons</th>
+    <th>Weekend Mornings</th>
+    <th>Weekend Afternoons</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @people.each do |person| %>
+  <tr>
+    <td><%= person.first %></td>
+    <td><%= person.last %></td>
+    <td><%= person.address %></td>
+    <td><%= person.email %></td>
+    <td><%= person.phone %></td>
+    <td><%= person.location %></td>
+    <td><%= person.position %></td>
+    <td><%= person.userNumber %></td>
+    <td> </td>
+    <td><% if person.dayMorning == "true" %>
+	  Available 
+        <% else %>
+	  Unavailable  
+        <% end %>
+    </td>
+    <td> <%= person.dayAfternoon %>
+<%# if person.dayAfternoon == "true %>
+        <%# else %>
+        <%# end %>
+    </td>
+    <td><%= person.endMorning %>
+<%# if person.endMorning == "true" %>
+        <%# else %>
+        <%# end %>
+    </td>
+    <td><%= person.endAfternoon %>
+<%# if person.endAfternoon == "true" %>
+        <%# else %>
+        <%# end %>
+    </td>
+    <td><%= link_to 'Show', person %></td>
+    <td><%= link_to 'Edit', edit_person_path(person) %></td>
+    <td><%= link_to 'Destroy', person, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Person', new_person_path %>
