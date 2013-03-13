@@ -37,23 +37,20 @@
 	  Unavailable  
         <% end %>
     </td>
-    <td><% if person.dayAfternoon == "true %>
-          Available
-        <% else %>
-          Unavailable
-        <% end %>
+    <td> <%= person.dayAfternoon %>
+<%# if person.dayAfternoon == "true %>
+        <%# else %>
+        <%# end %>
     </td>
-    <td><% if person.endMorning == "true" %>
-         Available
-        <% else %>
-          Unavailable
-        <% end %>
+    <td><%= person.endMorning %>
+<%# if person.endMorning == "true" %>
+        <%# else %>
+        <%# end %>
     </td>
-    <td><% if person.endAfternoon == "true" %>
-         Available
-        <% else %>
-          Unavailable
-        <% end %>
+    <td><%= person.endAfternoon %>
+<%# if person.endAfternoon == "true" %>
+        <%# else %>
+        <%# end %>
     </td>
     <td><%= link_to 'Show', person %></td>
     <td><%= link_to 'Edit', edit_person_path(person) %></td>

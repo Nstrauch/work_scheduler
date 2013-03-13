@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130210050837) do
+ActiveRecord::Schema.define(:version => 20130304204519) do
 
   create_table "availabilities", :force => true do |t|
     t.boolean  "DayMorning"
@@ -36,6 +36,14 @@ ActiveRecord::Schema.define(:version => 20130210050837) do
     t.boolean  "endAfternoon"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "schedules", :force => true do |t|
+    t.string   "name"
+    t.string   "lifeguard"
+    t.string   "manager"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
